@@ -14,6 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css">
 
+
     <title>Bootstrap 4</title>
 </head>
 
@@ -27,35 +28,53 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/index.html">Principal <span
-                        class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="/html/grid.html">Grid System</a>
+                <a class="nav-item nav-link" href="/index.html">Principal <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="/html/grid.html">Grid System</a>
                 <a class="nav-item nav-link" href="/html/componente.html">Componentes</a>
                 <a class="nav-item nav-link" href="/html/utilidades.html">Utilidades</a>
             </div>
         </div>
     </nav>
+
     <main class="container">
         <h1>Pagina ejemplo Bootstrap</h1>
+
+        <h2>Grid System</h2>
+
+        <div class="container">
+            <p>Dividimos la fila en 3 columnas para todos los breakpoints</p>
+            <div class="row">
+                <div class="col grid">
+                    One of three columns
+                </div>
+                <div class="col grid">
+                    One of three columns
+                </div>
+                <div class="col grid">
+                    One of three columns
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Dividimos la fila en 3 columnas para todos los breakpoints para sm</p>
+            <p>inferior a SM la columna ocupa 12</p>
+            <div class="row">
+                <div class="col-sm grid">
+                    One of three columns
+                </div>
+                <div class="col-sm grid">
+                    One of three columns
+                </div>
+                <div class="col-sm grid">
+                    One of three columns
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <footer class="footer bg-dark text-white">
-        <div class="container p-3 clearfix">
-            <nav class="justify-content-center">
-                <ul class="d-flex  justify-content-between flex-column flex-sm-row p-0">
-                    <li class="text-center"><a href="">Enlace 1</a></li>
-                    <li class="text-center"><a href="">Enlace 2</a></li>
-                    <li class="text-center"><a href="">Enlace 3</a></li>
-                    <li class="text-center"><a href="">Enlace 4</a></li>
-                </ul>
-            </nav>
 
-            <a class="float-right" href="https://github.com/juancar92?tab=repositories" target="_blank"
-                rel="noopener noreferrer">
-                <spam class="fab fa-github fa-2x"></spam> Ir al repositorio de Git
-            </a>
-        </div>
-    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
