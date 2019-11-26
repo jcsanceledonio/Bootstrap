@@ -7,4 +7,4 @@ Tenemos varias paginas .html donde probamos diferentes funcionalidades de este f
 - Utilidades
 - Plantillas 
 
-![Alt text](https://github.com/juancar92/Bootstrap/blob/master/Captura.png)
+![Alt text](https://github.com/juancar92/Bootstrap/blob/master/captura.png)
