@@ -21,60 +21,149 @@
 <body>
 
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/index.html">Principal <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="/html/grid.html">Grid System</a>
-                <a class="nav-item nav-link" href="/html/componente.html">Componentes</a>
-                <a class="nav-item nav-link" href="/html/utilidades.html">Utilidades</a>
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/index.html">Principal <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="/html/grid.html">Grid System</a>
+                    <a class="nav-item nav-link" href="/html/componente.html">Componentes</a>
+                    <a class="nav-item nav-link" href="/html/utilidades.html">Utilidades</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <main class="container">
-        <h1>Pagina ejemplo Bootstrap</h1>
 
-        <h2>Grid System</h2>
-
-        <div class="container">
-            <p>Dividimos la fila en 3 columnas para todos los breakpoints</p>
-            <div class="row">
-                <div class="col grid">
-                    One of three columns
-                </div>
-                <div class="col grid">
-                    One of three columns
-                </div>
-                <div class="col grid">
-                    One of three columns
-                </div>
+        <div class="row mb-5">
+            <div class="col">
+                <h1>Grid System</h1>
+                <p>Bootstrap funciona con un sistema de rejillas a 12 columnas</p>
+                <p>Usa internamente <code>flexbox</code> y es nesesario que este dentro de un <code>.container</code>
+                </p>
             </div>
         </div>
 
-        <div class="container">
-            <p>Dividimos la fila en 3 columnas para todos los breakpoints para sm</p>
-            <p>inferior a SM la columna ocupa 12</p>
-            <div class="row">
-                <div class="col-sm grid">
-                    One of three columns
-                </div>
-                <div class="col-sm grid">
-                    One of three columns
-                </div>
-                <div class="col-sm grid">
-                    One of three columns
-                </div>
+
+        <p>Disponemos de 12 colunas</p>
+        <div class="row mb-5">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+
+
+        <p>Dividimos la fila en 3 columnas para todos los breakpoints</p>
+        <div class="row">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
             </div>
         </div>
+
+
+
+        <p>Dividimos la fila en 3 columnas para todos los breakpoints para sm</p>
+        <p>inferior a SM la columna ocupa 12</p>
+        <div class="row mb-5">
+            <div class="col-sm">
+                <span class="d-none d-sm-block">4</span>
+                <span class="d-block d-sm-none">12</span>
+            </div>
+            <div class="col-sm">
+                <span class="d-none d-sm-block">4</span>
+                <span class="d-block d-sm-none">12</span>
+            </div>
+            <div class="col-sm">
+                <span class="d-none d-sm-block">4</span>
+                <span class="d-block d-sm-none">12</span>
+            </div>
+        </div>
+
+        <p>Disponemos de y 5 breakpoints y tambien se puede indicar las columnas queocupan</p>
+        <div class="row mb-5">
+            <div class="col-xs-12 col-sm-4 col-lg-6">1º columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">2º columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">3º columna</div>
+        </div>
+
+        <h2>Alineación vertical</h2>
+        <!-- Añadimos un estilo extra al .div .row para darle una altura minima -->
+        <p>Añadimos un estilo extra al .div .row para darle una altura minima</p>
+        <div class="row align-items-start alineacion">
+            <div class="col">
+                Arriba
+            </div>
+        </div>
+        <div class="row align-items-center alineacion">
+            <div class="col">
+                centrado
+            </div>
+
+        </div>
+        <div class="row align-items-end alineacion">
+            <div class="col">
+                Abajo
+            </div>
+        </div>
+
+        <!-- Añadimos un estilo extra al .div .row para darle una altura minima -->
+        <p>Añadimos un estilo extra al .div .row para darle una altura minima</p>
+        <div class="row alineacion">
+            <div class="col align-self-start">
+                One of three columns
+            </div>
+            <div class="col align-self-center">
+                One of three columns
+            </div>
+            <div class="col align-self-end">
+                One of three columns
+            </div>
+        </div>
+
+
+        <h2>Ordenación</h2>
+        <p>tenemos 6 div en 2 colunas para PCs, pero en movil queremos que la 5 sea la primera</p>
+
+        <div class="row">
+            <div class="col-sm-4 order-md-1">1</div>
+            <div class="col-sm-4 order-md-2">2</div>
+            <div class="col-sm-4 order-md-3">3</div>
+            <div class="col-sm-4 order-md-4">4</div>
+            <div class="col-sm-4 bg-primary order-first order-md-5">5</div>
+            <div class="col-sm-4 order-md-6">6</div>
+        </div>
+
+
+        <h2>offset</h2>
+        <p>queremos 3 columnas que ocupen 3 espacios pero de la 2º a la 3º debe quedar un hueco vacio</p>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-3 offset-md-1">.col-md-3 .offset-md-1</div>
+        </div>
+
 
     </main>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

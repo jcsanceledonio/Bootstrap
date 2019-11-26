@@ -11,14 +11,16 @@ main:before {
     content: "Mobile first";
 }
 
-.grid {
+/* .grid {
     border: 1px solid #333;
     background-color: #DDD;
     padding: 20px;
-}
+} */
 
-.row {
-    padding-top: 10px;
+.row div[class^="col"] {
+    border: 1px solid #333;
+    background-color: #DDD;
+    padding: 20px;
 }
 
 footer {
@@ -34,6 +36,12 @@ footer li {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+.alineacion {
+    height: 150px;
+    background-color: wheat;
+    margin-bottom: 20px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
